@@ -1,0 +1,35 @@
+.floating-nav {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 36px;              /* more spacing */
+  padding: 18px 44px;     /* bigger navbar */
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 60px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;              /* icon-text spacing */
+  color: #e5e5e5;
+  text-decoration: none;
+  font-size: 16px;        /* larger text */
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.nav-item svg {
+  width: 22px;            /* larger icons */
+  height: 22px;
+}
+
+.nav-item:hover {
+  color: #ffffff;
+  transform: translateY(-2px) scale(1.05);
+}
